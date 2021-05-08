@@ -1,6 +1,6 @@
 [![npm](https://img.shields.io/npm/v/is-valid-regon.svg)](https://www.npmjs.com/package/is-valid-regon) ![downloads](https://img.shields.io/npm/dt/is-valid-regon.svg) [![CI](https://github.com/wojtekmaj/is-valid-regon/workflows/CI/badge.svg)](https://github.com/wojtekmaj/is-valid-regon/actions) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
-# is-valid-regon
+# Is-Valid-REGON
 Check if a number is a valid REGON.
 
 ## tl;dr
