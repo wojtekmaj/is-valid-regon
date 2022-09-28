@@ -2,6 +2,7 @@ import isValidREGON from './index';
 
 describe('isValidREGON', () => {
   it('returns false for no input', () => {
+    // @ts-expect-error-next-line
     const result = isValidREGON();
 
     expect(result).toBe(false);
