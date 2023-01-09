@@ -1,7 +1,7 @@
 const weights9 = [8, 9, 2, 3, 4, 5, 6, 7];
 const weights14 = [2, 4, 8, 5, 0, 9, 7, 3, 6, 1, 2, 4, 8];
 
-export default function isValidREGON(rawRegon) {
+export default function isValidREGON(rawRegon: string | number): boolean {
   if (!rawRegon) {
     return false;
   }
