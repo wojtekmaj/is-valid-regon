@@ -16,30 +16,28 @@ export default function isValidREGON(rawRegon: string | number): boolean {
 
   // calculate checksum
   let sum = 0;
-  for (let position = 0; position < weights9.length; position += 1) {
-    const weight = weights9[position];
-    const digit = parseInt(regon[position], 10);
+  weights9.forEach((weight, position) => {
+    const digit = Number(regon[position]);
     sum += weight * digit;
-  }
+  });
 
   const checksum = (sum % 11) % 10;
 
-  if (checksum !== parseInt(regon[8], 10)) {
+  if (checksum !== Number(regon[8])) {
     return false;
   }
 
   if (regon.length === 14) {
     // calculate second checksum
     let sum2 = 0;
-    for (let position = 0; position < weights14.length; position += 1) {
-      const weight = weights14[position];
-      const digit = parseInt(regon[position], 10);
+    weights14.forEach((weight, position) => {
+      const digit = Number(regon[position]);
       sum2 += weight * digit;
-    }
+    });
 
     const checksum2 = (sum2 % 11) % 10;
 
-    if (checksum2 !== parseInt(regon[13], 10)) {
+    if (checksum2 !== Number(regon[13])) {
       return false;
     }
   }
