@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import isValidREGON from './index';
+import isValidREGON from './index.js';
 
 describe('isValidREGON', () => {
   it('returns false for no input', () => {
