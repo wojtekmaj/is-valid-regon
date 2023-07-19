@@ -17,12 +17,10 @@ Check if a number is a valid REGON.
 
 ## Examples
 
-```js
-> isValidREGON('817613530');
-< true
+```ts
+isValidREGON('817613530'); // true
 
-> isValidREGON('12345678512347');
-< true
+isValidREGON('12345678512347'); // true
 ```
 
 ## License
